@@ -1,22 +1,26 @@
 import numpy as np
 
-matriz1 = np.array([[1, 1, 1], [2, 2, 2])
-matriz2 = np.array([[1, 1, 1], [2, 2, 2],)
+matriz1 = np.array([[1, 1, 1],[2, 2, 2]])
+
+matriz2 = np.array([[1, 1, 1],[2, 2, 2]])
 
 suma_matrices = matriz1 + matriz2
 resta_matrices = matriz1 - matriz2
-producto_elemento_a_elemento = matriz1 * matriz2
-producto_matricial = np.dot(matriz1, matriz2)
+producto_punto = np.dot(matriz1, matriz2.T)
+producto_cruz = np.cross(matriz1, matriz2)
+division_matrices = matriz1 / matriz2
 
 print("Matriz 1:")
 print(matriz1)
 print("\nMatriz 2:")
 print(matriz2)
-print("\nSuma:")
+print("\nSuma de matrices:")
 print(suma_matrices)
-print("\nResta:")
+print("\nResta de matrices:")
 print(resta_matrices)
-print("\nProducto elemento a elemento:")
-print(producto_elemento_a_elemento)
-print("\nProducto matricial:")
-print(producto_matricial)
+print("\nProducto punto de matrices:")
+print(producto_punto)
+print("\nProducto cruz de matrices:")
+print(producto_cruz)
+print("\nDivisión de matrices:")
+print(division_matrices)
