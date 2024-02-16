@@ -6,11 +6,30 @@ if opcion == 1:
   print("a seleccionado la opcion volumen de un prisma, por favor seleccione el tipo de prisma:")
   prisma = int(input(print(f" 1. triangular\n 2. rectangular\n 3. trapezoidal\n 4. romboidal\n 5.pentagonal\n 6.hexagonal\n 7.octagonal\n")))
   if prisma == 1:
-    print()
+    print("a seleccionado un prisma triangular")
+    altura = float(input("ingresa el valor de la altura del prisma \n"))
+    base = float(input("ingresa el valor de la base del prisma \n"))
+    largo = float(input("ingresa el largo del prisma \n"))
+    volumen = ((altura*base)/2)*largo
+    print("el volumen del prisma triangular es: ", volumen)
+
   if prisma == 2:
-    print()
+    print("a seleccionado un prisma rectangular")
+    altura = float(input("ingresa el valor de la altura del prisma \n"))
+    ancho = float(input("ingresa el valor de la base del prisma \n"))
+    largo = float(input("ingresa el largo del prisma \n"))
+    volumen = altura*ancho*largo
+    print("el volumen del prisma rectangular es: ", volumen)
+    
   if prisma == 3:
-    print()
+    print("a seleccionado un prisma trapezoidal")
+    basemay = float(input("ingresa el valor de la base mayor del prisma \n"))
+    basemen = float(input("ingresa el valor de la base menor del prisma \n"))
+    altura = float(input("ingresa la altura del prisma \n"))
+    largo = float(input("ingresa el largo del prisma \n"))
+    volumen = ((basemay+basemen)/2)*altura*largo
+    print("el volumen del prisma trapezoidal es: ", volumen)
+
   if prisma == 4:
     print()
   if prisma == 5:
