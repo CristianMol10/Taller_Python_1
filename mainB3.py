@@ -39,11 +39,28 @@ if opcion == 1:
     print("el volumen del prisma romboidal es: ", volumen)
 
   if prisma == 5:
-    print()
+    print("a seleccionado un prisma pentagonal")
+    ladop = float(input("ingresa el valor del lado del pentagono base del prisma \n"))
+    apotema = float(input("ingresa el valor de la apotema del pentagono base del prisma \n"))
+    largo = float(input("ingresa el largo del prisma \n"))
+    volumen = ((5*ladop*apotema)/2)*largo
+    print("el volumen del prisma pentagonal es: ", volumen)
+
   if prisma == 6:
-    print()
+    print("a seleccionado un prisma hexagonal")
+    ladoh = float(input("ingresa el valor del lado del hexagono base del prisma \n"))
+    apotema = float(input("ingresa el valor de la apotema del hexagono base del prisma \n"))
+    largo = float(input("ingresa el largo del prisma \n"))
+    volumen = 3*ladoh*apotema*largo
+    print("el volumen del prisma hexagonal es: ", volumen)
+    
   if prisma == 7:
-    print()
+    print("a seleccionado un prisma octagonal")
+    ladoo = float(input("ingresa el valor del lado del octagono base del prisma \n"))
+    apotema = float(input("ingresa el valor de la apotema del octagono base del prisma \n"))
+    largo = float(input("ingresa el largo del prisma \n"))
+    volumen = 4*ladoo*apotema*largo
+    print("el volumen del prisma octagonal es: ", volumen)    
 
 if opcion == 2:
   print("a seleccionado la opcion volumen de una piramide:")
