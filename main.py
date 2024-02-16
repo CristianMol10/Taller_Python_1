@@ -2,7 +2,7 @@ import numpy as np
 
 vector1 = np.array([2, 2, 2])
 vector2 = np.array([2, 2, 2])
-
+#comentario random
 suma_vectores = vector1+vector2
 resta_vectores = vector1-vector2
 producto_punto = np.dot(vector1, vector2)
