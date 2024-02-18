@@ -15,6 +15,3 @@ if opcion == b:
 if opcion == c:
     print("Robot Esferico")
     print("Este tipo de robot tiene en sus primeras dos articulaciones rotacionales con sus ejes perpendiculares, y una tercera de tipo primsatico con su eje perpendicular a las dos primeras")
-
-if opcion != ():
-    print("seleccion no valida")

@@ -76,7 +76,7 @@ if opcion == 3:
   radio2 = float(input("ingresa el valor del segundo radio \n"))
   altura = float(input("ingresa el valor de la altura \n"))
   volumen=math.pi*altura*(radio1**2+radio2**2+radio1*radio2)
-  print("el volumen del cono truncado es: ", volumen)
+  print("el volumen del cono truncado es: ", volumen%.2)
 
 if opcion == 4:
   print("a seleccionado la opcion volumen de un cilindro:")
