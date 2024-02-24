@@ -10,9 +10,9 @@ import matplotlib.pyplot as plt
 
 Voltaje = float(input("Ingrese el voltaje inicial (V): "))
 Resistencia = float(input("Ingrese la resistencia (Ω): "))
-Capacitancia = float(input("Ingrese la capacitancia (μF): "))
+Capacitancia = float(input("Ingrese la capacitancia (F): "))
 
-tiempo = np.linspace(0, 20000, 1000)
+tiempo = np.linspace(0, 5*Resistencia*Capacitancia, 1000)
 
 def carga_descarga_RC(Voltaje, Capacitancia, Resistencia, tiempo):
     

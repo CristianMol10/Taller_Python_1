@@ -2,6 +2,6 @@ respuesta = "s"
 
 print("bienvenido al bucle")
 
-while respuesta != 'n':             
-    respuesta = input('Desea continuar (s/n) \n')
+while respuesta != 'no':             
+    respuesta = input('Desea continuar (si/no) \n')
 print('Fin del bucle')
