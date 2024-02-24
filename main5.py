@@ -34,20 +34,20 @@ def RotacionZ(Angulo):
     return RotacionMatrix
 
 # Definir ángulo de rotación en radianes
-Angulo = np.pi / 4  # Por ejemplo, rotación de 45 grados
+Angulo = np.pi / 2  # Por ejemplo, rotación de 45 grados
 
     # Realizar rotación en el eje X
-RotacionX = RotacionX(Angulo)
-print("Matriz de rotación en el eje X:")
-print(RotacionX)
+Rotacion_X = RotacionX(Angulo)
+print("Matriz de rotacion en el eje X:")
+print(Rotacion_X)
 
 # Realizar rotación en el eje Y
-RotacionY = RotacionY(Angulo)
-print("\nMatriz de rotación en el eje Y:")
-print(RotacionY)
+Rotacion_Y = RotacionY(Angulo)
+print("\nMatriz de rotacion en el eje Y:")
+print(Rotacion_Y)
 
 # Realizar rotación en el eje Z
-RotacionZ = RotacionZ(Angulo)
-print("\nMatriz de rotación en el eje Z:")
-print(RotacionZ)
+Rotacion_Z = RotacionZ(Angulo)
+print("\nMatriz de rotacion en el eje Z:")
+print(Rotacion_Z)
     
