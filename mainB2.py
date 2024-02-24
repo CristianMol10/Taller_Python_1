@@ -1,13 +1,7 @@
 import random
-
-def lista(n):
-      lista = [0]  * n
-      for i in range(n):
-          lista[i] = random.random()
-      return lista
-
-print("Ingrese el numero deseado de numeros aleatorios")
-n=int(input())
-
-aleatorios=lista(n)
-print("sus numeros aleatorios son: \n", aleatorios)
+mayor = int(input('Ingrese el rango maximo de numeros\n'))
+menor = int(input('Ingrese el rango minimo de numeros\n'))
+cantidad = int(input('Ingresa el valor de numeros aleatorios\n'))
+ 
+lista = [random.randint(menor, mayor) for _ in range(cantidad)]
+print("sus numeros aleatorios son: \n", lista)
