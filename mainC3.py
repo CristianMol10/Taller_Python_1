@@ -7,7 +7,6 @@ import matplotlib.pyplot as plt
 
 '''
 
-
 Voltaje = float(input("Ingrese el voltaje inicial (V): "))
 Resistencia = float(input("Ingrese la resistencia (Ω): "))
 Capacitancia = float(input("Ingrese la capacitancia (F): "))
@@ -19,11 +18,9 @@ def carga_descarga_RC(Voltaje, Capacitancia, Resistencia, tiempo):
     tau = Resistencia * Capacitancia
     carga = Voltaje * (1 - np.exp(-tiempo / tau))
     descarga = Voltaje * np.exp(-tiempo / tau)
-
     return carga, descarga
 
 carga, descarga = carga_descarga_RC(Voltaje, Capacitancia, Resistencia, tiempo)
-
 
 plt.figure(figsize=(6, 4))
 plt.plot(tiempo, carga, label='Carga')
