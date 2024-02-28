@@ -11,12 +11,22 @@ Ecuaciones de Callendar-Van Dusen:
 Temperatura RTD ≥ 0°C: Rt = R0(1+At+Bt2)
 Temperatura RTD < 0°C: Rt = R0[1+At+Bt2+C(t-100)t3]
 """
-def resistencia_PT100(B):
-  A = 0.00385
-  Ro = 100.0
-  R = Ro * (1 + A * (B - 0))
-  return float(R)
+def calcular_resistencia(t):
+    R0 = 100.0  # Resistencia a 0°C para PT100
+    A = 3.9083e-3
+    B = -5.775e-7
+    C = -4.183e-12 if t < 0 else 0 
+    
+    if t >= 0:
+        Rt = R0 * (1 + A * t + B * t**2)
+    else:
+        Rt = R0 * (1 + A * t + B * t**2 + C * (t - 100) * t**3)
+    
+    return Rt
 
-B = 50
-print("La resistencia para la temperatura", B, "°C es:",
-      round(resistencia_PT100(B), 2), "Ω")
+def main():
+    temperatura = float(input("Ingrese la temperatura en grados Celsius: "))
+    resistencia = calcular_resistencia(temperatura)
+    print(f"La resistencia de la RTD a {temperatura}°C es {resistencia} ohmios.")
+
+main()
