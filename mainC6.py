@@ -1,6 +1,6 @@
-import cv2
+import cv2 #Importar Libreria
 
-# Leer la imagen
+# Leer la imagen, las imagenes se deben descargar localmente
 img = cv2.imread("d:\Downloads\Mazda.png")
 
 # Aplicar desenfoque a la imagen
